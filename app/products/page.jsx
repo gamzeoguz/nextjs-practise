@@ -17,7 +17,7 @@ const Products = async () => {
         { products.map((product) => (
           <li key={product.id}>
             <Link href={`/products/details/${product.id}`}>
-              <Image className='product-image' src={`${product.image}`} alt="product-image" width={100} height={143} />
+              <Image loading="lazy" className='product-image' src={`${product.image}`} alt="product-image" width={100} height={143} />
               <hr></hr>
               <h3>{product.title}</h3>
               <br></br>
